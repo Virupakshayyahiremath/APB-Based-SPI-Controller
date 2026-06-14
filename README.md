@@ -34,19 +34,19 @@ This project implements a fully functional **SPI Master Controller** with an **A
                         ┌─────────────────────────────────────────────┐
                         │                  spi_top                    │
                         │                                             │
-  PCLK   ──────────────►│  ┌─────────────┐     ┌──────────────────┐  │
-  PRESET_n ────────────►│  │  u_apb_     │     │   u_baud_gen     │  │──► sclk_o
-  PSEL_i  ────────────►│  │  slave      │────►│ (Baud Rate Gen)  │  │
-  PENABLE_i ──────────►│  │             │     └──────────────────┘  │
-  PWRITE_i ───────────►│  │  (APB FSM)  │     ┌──────────────────┐  │──► mosi_o
-  PADDR_i[2:0] ───────►│  │             │────►│   u_shift_reg    │  │◄── miso_i
-  PWDATA_i[7:0] ──────►│  └─────────────┘     │ (Shift Register) │  │
-                        │                      └──────────────────┘  │──► ss_o
-  PRDATA_o[7:0] ◄──────│  ┌─────────────┐                           │
-  PREADY_o ◄───────────│  │ u_slave_    │                           │──► spi_interrupt_req_o
-  PSLVERR_o ◄──────────│  │ select      │                           │
-                        │  │ (SS + TIP)  │                           │
-                        │  └─────────────┘                           │
+  PCLK   ──────────────►│  ┌────────────┐     ┌──────────────────┐    │
+  PRESET_n ────────────►│  │  u_apb_    │     │   u_baud_gen     │    │──► sclk_o
+  PSEL_i   ────────────►│  │  slave     │────►│ (Baud Rate Gen)  │    │
+  PENABLE_i  ──────────►│  │            │     └──────────────────┘    │
+  PWRITE_i  ───────────►│  │  (APB FSM) │     ┌──────────────────┐    │──► mosi_o
+  PADDR_i[2:0]  ───────►│  │            │────►│   u_shift_reg    │    │◄── miso_i
+  PWDATA_i[7:0] ──────► │  └────────────┘     │ (Shift Register) │    │
+                        │                     └──────────────────┘    │──► ss_o
+  PRDATA_o[7:0] ◄────── │  ┌─────────────┐                            │
+  PREADY_o ◄─────────── │  │ u_slave_    │                            │──► spi_interrupt_req_o
+  PSLVERR_o ◄────────── │  │ select      │                            │
+                        │  │ (SS + TIP)  │                            │
+                        │  └─────────────┘                            │
                         └─────────────────────────────────────────────┘
 ```
 
