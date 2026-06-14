@@ -132,11 +132,11 @@ Implements the APB protocol state machine with three states: **IDLE**, **SETUP**
   PADDR_i[2:0] ────►│                            ├──────► PREADY_o
   PWRITE_i ────────►│                            ├──────► PSLVERR_o
   PSEL_i ──────────►│        apb_slave           ├──────► mstr_o
-  PENABLE_i ───────►│   (APB FSM: IDLE /          ├──────► cpol_o
-  PWDATA_i[7:0] ───►│    SETUP / ENABLE)          ├──────► cpha_o
+  PENABLE_i ───────►│   (APB FSM: IDLE /         ├──────► cpol_o
+  PWDATA_i[7:0] ───►│    SETUP / ENABLE)         ├──────► cpha_o
   ss_i ────────────►│                            ├──────► lsbfe_o
-  miso_data_i[7:0]─►│   (SPI FSM: spi_run /       ├──────► spiswai_o
-  receive_data_i ──►│    spi_wait / spi_stop)     ├──────► sppr_o[2:0]
+  miso_data_i[7:0]─►│   (SPI FSM: spi_run /      ├──────► spiswai_o
+  receive_data_i ──►│    spi_wait / spi_stop)    ├──────► sppr_o[2:0]
   tip_i ───────────►│                            ├──────► spr_o[2:0]
                     │                            ├──────► spi_mode_o[1:0]
                     │                            ├──────► send_data_o
@@ -181,15 +181,15 @@ Controls the `ss_o` (active-low) signal and the TIP (Transaction In Progress) fl
 **Block Diagram:**
 
 ```
-                    ┌────────────────────────────┐
-  PCLK     ────────►│                            │
-  PRESET_n ────────►│                            ├──────► ss_o
-  mstr_i ──────────►│       spi_slave_select     ├──────► tip_o
-  spiswai_i ───────►│   (spi_slave_control_      ├──────► receive_data_o
-  spi_mode_i[1:0] ─►│    select)                 │
-  send_data_i ─────►│                            │
-  BaudRateDivisor_i[11:0]►│                      │
-                    └────────────────────────────┘
+                          ┌────────────────────────────┐
+        PCLK     ────────►│                            │
+        PRESET_n ────────►│                            ├──────► ss_o
+        mstr_i ──────────►│       spi_slave_select     ├──────► tip_o
+        spiswai_i ───────►│   (spi_slave_control_      ├──────► receive_data_o
+        spi_mode_i[1:0] ─►│    select)                 │
+        send_data_i ─────►│                            │
+  BaudRateDivisor_i[11:0]►│                            │
+                          └────────────────────────────┘
 ```
 
 ### 4. `shift_reg.v` — SPI Shift Register
@@ -204,22 +204,22 @@ Handles the actual serial data transmission and reception.
 **Block Diagram:**
 
 ```
-                       ┌─────────────────────────────┐
-  PCLK     ───────────►│                             │
-  PRESET_n ───────────►│                             │
-  ss_i ────────────────►│                            ├──────► mosi_o
-  send_data_i ─────────►│                            ├──────► data_miso_o[7:0]
-  receive_data_i ──────►│                            │
-  lsbfe_i ─────────────►│                            │
-  cpha_i ──────────────►│         shift_reg          │
-  cpol_i ──────────────►│       (shift_register)     │
-  data_mosi_i[7:0] ────►│                            │
-  miso_i ───────────────►│                           │
-  miso_receive_sclk_i ──►│                           │
-  miso_receive_sclk0_i ─►│                           │
-  mosi_send_sclk_i ─────►│                           │
-  mosi_send_sclk0_i ────►│                           │
-                       └─────────────────────────────┘
+                         ┌─────────────────────────────┐
+    PCLK     ───────────►│                             │
+    PRESET_n ───────────►│                             │
+   ss_i ────────────────►│                             ├──────► mosi_o
+   send_data_i ─────────►│                             ├──────► data_miso_o[7:0]
+   receive_data_i ──────►│                             │
+   lsbfe_i ─────────────►│                             │
+   cpha_i ──────────────►│         shift_reg           │
+   cpol_i ──────────────►│       (shift_register)      │
+   data_mosi_i[7:0] ────►│                             │
+  miso_i ───────────────►│                             │
+  miso_receive_sclk_i ──►│                             │
+  miso_receive_sclk0_i ─►│                             │
+  mosi_send_sclk_i ─────►│                             │
+  mosi_send_sclk0_i ────►│                             │
+                         └─────────────────────────────┘
 ```
 
 ---
