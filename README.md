@@ -114,28 +114,113 @@ APB-Based SPI Controller/
 ## Sub-Block Descriptions
 
 ### 1. `apb_slave.v` — APB Slave Interface
-Implements the APB protocol state machine with two states: **SETUP** and **ENABLE**.
+
+Implements the APB protocol state machine with three states: **IDLE**, **SETUP**, and **ENABLE**.
 - Decodes `PADDR_i` to read/write internal SPI control registers
 - Drives `PREADY_o`, `PSLVERR_o`, and `PRDATA_o`
 - Issues `rd_enb` and `wr_enb` strobes to downstream blocks
+- Decodes SPI_CR_1 / SPI_CR_2 / SPI_BR fields into `mstr_o`, `cpol_o`, `cpha_o`, `lsbfe_o`, `spiswai_o`, `sppr_o`, `spr_o`, `spi_mode_o`
+- Generates `send_data_o` and `mosi_data_o` to hand off data to the shifter
+- Generates `spi_interrupt_request_o` based on SPIF, SPTEF, and MODF status flags
+
+**Block Diagram:**
+
+```
+                    ┌────────────────────────────┐
+  PCLK     ────────►│                            │
+  PRESET_n ────────►│                            ├──────► PRDATA_o[7:0]
+  PADDR_i[2:0] ────►│                            ├──────► PREADY_o
+  PWRITE_i ────────►│                            ├──────► PSLVERR_o
+  PSEL_i ──────────►│        apb_slave           ├──────► mstr_o
+  PENABLE_i ───────►│   (APB FSM: IDLE /          ├──────► cpol_o
+  PWDATA_i[7:0] ───►│    SETUP / ENABLE)          ├──────► cpha_o
+  ss_i ────────────►│                            ├──────► lsbfe_o
+  miso_data_i[7:0]─►│   (SPI FSM: spi_run /       ├──────► spiswai_o
+  receive_data_i ──►│    spi_wait / spi_stop)     ├──────► sppr_o[2:0]
+  tip_i ───────────►│                            ├──────► spr_o[2:0]
+                    │                            ├──────► spi_mode_o[1:0]
+                    │                            ├──────► send_data_o
+                    │                            ├──────► mosi_data_o[7:0]
+                    │                            ├──────► spi_interrupt_request_o
+                    └────────────────────────────┘
+```
 
 ### 2. `spi_baud_generator.v` — Baud Rate Generator
+
 Generates the SPI clock (`sclk_o`) and phase-shifted clocks for MOSI and MISO sampling.
-- SPR[2:0] configures the clock divider ratio
-- Produces `miso_receive_sclk`, `mosi_send_sclk` and their inverted variants for CPOL/CPHA support
-- Outputs `BaudRateDivisor[15:0]` for reference
+- SPR[2:0] and SPPR[2:0] configure the clock divider ratio: `BaudRateDivisor = (SPPR+1) × 2^(SPR+1)`
+- Produces `miso_receive_sclk_o`, `miso_receive_sclk0_o`, `mosi_send_sclk_o`, `mosi_send_sclk0_o` flags for CPOL/CPHA support
+- Outputs `BaudRateDivisor_o[11:0]` for reference
+- Operates in `spi_run`, `spi_wait`, and `spi_stop` modes based on `spi_mode_i` and `spiswai_i`
 
-### 3. `shift_reg.v` — SPI Shift Register
-Handles the actual serial data transmission and reception.
-- TX: shifts out `data_mosi_i[7:0]` bit by bit on MOSI, MSB-first or LSB-first based on `lsbfe_i`
-- RX: captures MISO bit by bit into `data_miso_o[7:0]`
-- Bit counters `count`, `count1`, `count2`, `count3` track TX and RX progress
+**Block Diagram:**
 
-### 4. `spi_slave_select.v` — Slave Select Controller
+```
+                    ┌────────────────────────────┐
+  PCLK     ────────►│                            ├──────► sclk_o
+  PRESET_n ────────►│                            ├──────► miso_receive_sclk_o
+  spi_mode_i[1:0] ─►│                            ├──────► miso_receive_sclk0_o
+  spiswai_i ───────►│      spi_baud_generator    ├──────► mosi_send_sclk_o
+  sppr_i[2:0] ─────►│                            ├──────► mosi_send_sclk0_o
+  spr_i[2:0] ──────►│                            ├──────► BaudRateDivisor_o[11:0]
+  cpol_i ──────────►│                            │
+  cpha_i ──────────►│                            │
+  ss_i ────────────►│                            │
+                    └────────────────────────────┘
+```
+
+### 3. `spi_slave_select.v` — Slave Select Controller
+
 Controls the `ss_o` (active-low) signal and the TIP (Transaction In Progress) flag.
-- Asserts `ss_o` low when a transfer begins
-- De-asserts after 8 bits are transferred
-- `tip_o` indicates an active transfer to prevent APB write collisions
+- Asserts `ss_o` low when `send_data_i` is high (in `spi_run` mode, or `spi_wait` mode with `spiswai_i` low)
+- Uses an internal counter (`target_s = BaudRateDivisor_i × 16`) to time the SS-low duration
+- De-asserts `ss_o` after the full 8-bit transfer duration has elapsed
+- Asserts `receive_data_o` once the SS-low period completes, signalling the shifter/APB interface to latch MISO data
+- `tip_o` is the complement of `ss_o`, indicating an active transfer to prevent APB write collisions
+
+**Block Diagram:**
+
+```
+                    ┌────────────────────────────┐
+  PCLK     ────────►│                            │
+  PRESET_n ────────►│                            ├──────► ss_o
+  mstr_i ──────────►│       spi_slave_select     ├──────► tip_o
+  spiswai_i ───────►│   (spi_slave_control_      ├──────► receive_data_o
+  spi_mode_i[1:0] ─►│    select)                 │
+  send_data_i ─────►│                            │
+  BaudRateDivisor_i[11:0]►│                      │
+                    └────────────────────────────┘
+```
+
+### 4. `shift_reg.v` — SPI Shift Register
+
+Handles the actual serial data transmission and reception.
+- TX: shifts out `data_mosi_i[7:0]` bit by bit on `mosi_o`, MSB-first or LSB-first based on `lsbfe_i`
+- RX: captures `miso_i` bit by bit into `data_miso_o[7:0]`
+- Bit counters `count`, `count1`, `count2`, `count3` track TX and RX progress for each CPOL/CPHA combination
+- `mosi_send_sclk_i` / `mosi_send_sclk0_i` gate when MOSI bits are driven
+- `miso_receive_sclk_i` / `miso_receive_sclk0_i` gate when MISO bits are sampled
+
+**Block Diagram:**
+
+```
+                       ┌─────────────────────────────┐
+  PCLK     ───────────►│                             │
+  PRESET_n ───────────►│                             │
+  ss_i ────────────────►│                            ├──────► mosi_o
+  send_data_i ─────────►│                            ├──────► data_miso_o[7:0]
+  receive_data_i ──────►│                            │
+  lsbfe_i ─────────────►│                            │
+  cpha_i ──────────────►│         shift_reg          │
+  cpol_i ──────────────►│       (shift_register)     │
+  data_mosi_i[7:0] ────►│                            │
+  miso_i ───────────────►│                           │
+  miso_receive_sclk_i ──►│                           │
+  miso_receive_sclk0_i ─►│                           │
+  mosi_send_sclk_i ─────►│                           │
+  mosi_send_sclk0_i ────►│                           │
+                       └─────────────────────────────┘
+```
 
 ---
 
