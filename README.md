@@ -295,6 +295,18 @@ Logic synthesis was performed using **Synopsys Design Compiler** targeting the `
 - All sub-blocks synthesized and elaborated cleanly
 - No unresolved references or missing ports
 
+### Top-Level Synthesized Schematic
+
+The synthesized `spi_top` module presents a clean black-box symbol with the complete APB + SPI port list — `PCLK`, `PRESET_n`, `PWRITE_i`, `PSEL_i`, `PENABLE_i`, `PADDR_i[2:0]`, `PWDATA_i[7:0]`, and `miso_i` as inputs, and `PRDATA_o[7:0]`, `PREADY_o`, `PSLVERR_o`, `sclk_o`, `mosi_o`, `ss_o`, and `spi_interrupt_req_o` as outputs — confirming all top-level ports are correctly mapped with no missing or extra pins.
+
+![spi_top top-level synthesis schematic](synthesis_schematic_1.png)
+
+### Detailed Internal Schematic
+
+The detailed gate-level schematic shows the four synthesized sub-blocks — `u_slave_select`, `u_apb_slave`, `u_baud_gen`, and `u_shift_reg` — and their interconnections. Key internal buses visible include `spi_mode_w`, `sppr_w`/`spr_w`, `cpol_w`/`cpha_w`/`lsbfe_w`, `mosi_data_w`, `data_miso_w`, `BaudRateDivisor_16_w`, `send_data_w`, `receive_data_w`, and `tip_w`, demonstrating clean hierarchical connectivity between the APB slave, baud rate generator, slave select, and shifter blocks after synthesis.
+
+![spi_top detailed synthesis schematic](synthesis_schematic_2.png)
+
 ---
 
 ## Linting
