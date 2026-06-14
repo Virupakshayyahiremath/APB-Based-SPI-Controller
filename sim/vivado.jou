@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jun  9 11:15:59 2026
+# Process ID         : 8784
+# Current directory  : V:/apb_based_spi/sim
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3204 V:\apb_based_spi\sim\apb_slave.xpr
+# Log file           : V:/apb_based_spi/sim/vivado.log
+# Journal file       : V:/apb_based_spi/sim\vivado.jou
+# Running On         : DESKTOP-SGMVLD9
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 3 3250U with Radeon Graphics         
+# CPU Frequency      : 2595 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 6354 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 16554 MB
+# Available Virtual  : 4605 MB
+#-----------------------------------------------------------
+start_gui
+open_project V:/apb_based_spi/sim/apb_slave.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source apb_slave_tb.tcl
+close_sim
+launch_simulation
+source apb_slave_tb.tcl
+close_sim
+launch_simulation
+close_project
+open_project V:/apb_based_spi/sim/apb_slave.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source apb_slave_tb.tcl
+close_sim

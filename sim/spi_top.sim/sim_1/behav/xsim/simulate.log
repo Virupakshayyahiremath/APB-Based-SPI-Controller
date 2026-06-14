@@ -1,0 +1,35 @@
+Time resolution is 1 ps
+
+[0] ===== TC1: Reset defaults =====
+[75000] RESET released
+[95000] PASS    SS_RST  0x01
+[95000] PASS  MOSI_RST  0x00
+[95000] PASS  SCLK_RST  0x00
+
+[95000] ===== TC2: Config + readback =====
+[250000] PASS       CR1  0x50
+[290000] PASS       CR2  0x00
+[330000] PASS        BR  0x11
+
+[345000] ===== TC3: TX 0xFF =====
+[1045000] Frame done
+[1085000] PASS   MOSI_FF  0xff
+
+[1115000] ===== TC4: TX 0xA5 =====
+[1815000] Frame done
+[1855000] PASS   MOSI_A5  0xa5
+
+[1885000] ===== TC5: Full-duplex TX=0xB6 RX=0xC3 =====
+[2585000] Frame done
+[2625000] PASS   MOSI_B6  0xb6
+[2655000] PASS     RX_C3  0xc3
+
+[2685000] ===== TC6: Back-to-back TX 0x12 then 0x34 =====
+[3385000] Frame done
+[3425000] PASS   MOSI_12  0x12
+[4155000] Frame done
+[4195000] PASS   MOSI_34  0x34
+
+[4225000] ===== Simulation complete =====
+[4225000] PASS=12  FAIL=0
+$finish called at time : 4225 ns : File "V:/apb_based_spi/tb/spi_top_tb.v" Line 348

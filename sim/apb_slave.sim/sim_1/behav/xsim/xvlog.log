@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:143]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:144]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:146]
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb

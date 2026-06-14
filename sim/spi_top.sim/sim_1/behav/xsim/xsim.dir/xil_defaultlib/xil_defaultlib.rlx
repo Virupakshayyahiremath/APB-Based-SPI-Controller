@@ -1,0 +1,13 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+V:/apb_based_spi/rtl/apb_slave.v,1781411446,verilog,,V:/apb_based_spi/rtl/shift_reg.v,,apb_slave,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/rtl/shift_reg.v,1781365573,verilog,,V:/apb_based_spi/rtl/spi_baud_generator.v,,shift_reg,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/rtl/spi_baud_generator.v,1781409637,verilog,,V:/apb_based_spi/rtl/spi_slave_select.v,,spi_baud_generator,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/rtl/spi_slave_select.v,1781438359,verilog,,V:/apb_based_spi/tb/spi_slave_select_tb.v,,spi_slave_select,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/rtl/spi_top.v,1781001597,verilog,,V:/apb_based_spi/tb/spi_top_tb.v,,spi_top,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/sim/spi_top.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+V:/apb_based_spi/tb/spi_baud_generator_tb.v,1781410397,verilog,,,,spi_baud_generator_tb,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/tb/spi_slave_select_tb.v,1781369430,verilog,,,,spi_slave_select_tb,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/tb/spi_top_tb.v,1781438155,verilog,,,,spi_top_tb,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

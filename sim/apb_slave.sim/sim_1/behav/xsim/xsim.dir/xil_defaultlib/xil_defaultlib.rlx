@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+V:/apb_based_spi/rtl/apb_slave.v,1780985856,verilog,,V:/apb_based_spi/tb/apb_slave_tb.v,,apb_slave,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+V:/apb_based_spi/tb/apb_slave_tb.v,1770382456,verilog,,,,apb_slave_tb,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/shift_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/shift_reg_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg_tb

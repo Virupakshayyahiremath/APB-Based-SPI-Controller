@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+V:/apb_based_spi/rtl/shift_reg.v,1780922924,verilog,,V:/apb_based_spi/tb/shift_reg_tb.v,,shift_reg,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+V:/apb_based_spi/sim/shift_reg.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+V:/apb_based_spi/tb/shift_reg_tb.v,1780923602,verilog,,,,shift_reg_tb,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

@@ -1,0 +1,787 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jun  9 11:15:59 2026
+# Process ID         : 8784
+# Current directory  : V:/apb_based_spi/sim
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3204 V:\apb_based_spi\sim\apb_slave.xpr
+# Log file           : V:/apb_based_spi/sim/vivado.log
+# Journal file       : V:/apb_based_spi/sim\vivado.jou
+# Running On         : DESKTOP-SGMVLD9
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 3 3250U with Radeon Graphics         
+# CPU Frequency      : 2595 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 6354 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 16554 MB
+# Available Virtual  : 4605 MB
+#-----------------------------------------------------------
+start_gui
+open_project V:/apb_based_spi/sim/apb_slave.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc702\1.4\board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'V:/apb_based_spi/sim/apb_slave.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1583.297 ; gain = 96.406
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'apb_slave_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'apb_slave_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj apb_slave_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1602.051 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.apb_slave
+Compiling module xil_defaultlib.apb_slave_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot apb_slave_tb_behav
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:02:59 . Memory (MB): peak = 1613.477 ; gain = 11.426
+INFO: [USF-XSim-69] 'elaborate' step finished in '179' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "apb_slave_tb_behav -key {Behavioral:sim_1:Functional:apb_slave_tb} -tclbatch {apb_slave_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source apb_slave_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.332 ; gain = 3.055
+# run 1000ns
+T=0 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=35000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+
+--- TEST 1: Reset values ---
+T=55000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=65000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+SPI_CR1 after reset = 0x04  (expect 0x04)
+T=75000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=85000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=95000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_CR2 after reset = 0x00  (expect 0x00)
+T=105000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=115000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=125000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_BR  after reset = 0x00  (expect 0x00)
+spi_mode_o = 01  (expect 10 = SPI_RUN)
+
+--- TEST 2: Configure SPI_CR1 (SPE=1, MSTR=1) ---
+T=135000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=145000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=155000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=156000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+T=165000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=175000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=185000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+SPI_CR1 readback = 0x04  (expect 0x50)
+mstr_o=0 cpol_o=0 cpha_o=1 lsbfe_o=0
+spi_mode_o = 01  (expect 10 = SPI_RUN after SPE=1)
+
+--- TEST 3: Configure SPI_BR ---
+T=195000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=205000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=215000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=225000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=235000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=245000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_BR readback = 0x00  (expect 0x23)
+sppr_o=000  spr_o=000  (expect 001, 011)
+
+--- TEST 4: Write SPI_DR = 0xA5 ---
+T=255000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=265000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=275000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=285000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+send_data_o=0  (expect 1)
+mosi_data_o=0x00  (expect 0xA5)
+send_data_o after idle=0  (expect 0)
+
+--- TEST 5: Simulate MISO receive 0x3C ---
+T=355000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=365000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=3c IRQ=0
+SPI_DR after receive = 0x3c  (expect 0x3C)
+
+--- TEST 6: Read SPI_SR ---
+T=375000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=385000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=395000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=80 IRQ=0
+SPI_SR = 0x80  (expect 0x80: spif=1)
+
+--- TEST 7: SPI_CR2 mask test ---
+T=405000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=415000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=425000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=435000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=445000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=455000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_CR2 after write 0xFF = 0x00  (expect 0x1B)
+
+--- TEST 8: PSLVERR when tip_i=0 ---
+T=458000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=465000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=475000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=485000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+PREADY_o=1 PSLVERR_o=1  (expect PREADY=1, PSLVERR=1)
+
+--- TEST 9: SPE=0 -> spi_mode should go to SPI_WAIT ---
+T=488000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+T=495000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=505000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=515000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=516000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+T=525000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 01  (expect 01 = SPI_WAIT)
+
+--- TEST 10: SPE=1 -> spi_mode should return to SPI_RUN ---
+T=555000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=565000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=566000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+T=575000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 01  (expect 10 = SPI_RUN)
+
+--- Simulation complete ---
+$finish called at time : 635 ns : File "V:/apb_based_spi/tb/apb_slave_tb.v" Line 336
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1626.332 ; gain = 3.055
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'apb_slave_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:03:40 . Memory (MB): peak = 1626.332 ; gain = 24.281
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'apb_slave_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'apb_slave_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj apb_slave_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:143]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:144]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:146]
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.apb_slave
+Compiling module xil_defaultlib.apb_slave_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot apb_slave_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1655.168 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "apb_slave_tb_behav -key {Behavioral:sim_1:Functional:apb_slave_tb} -tclbatch {apb_slave_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source apb_slave_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+T=0 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=35000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+
+--- TEST 1: Reset values ---
+T=55000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=65000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+SPI_CR1 after reset = 0x04  (expect 0x04)
+T=75000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=85000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=95000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_CR2 after reset = 0x00  (expect 0x00)
+T=105000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=115000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=125000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_BR  after reset = 0x00  (expect 0x00)
+spi_mode_o = 01  (01=SPI_WAIT is correct; spe=0 at reset)
+
+--- TEST 2: Configure SPI_CR1 (SPE=1, MSTR=1) ---
+T=135000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=145000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=155000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=165000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=175000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=205000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=215000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+SPI_CR1 readback = 0x50  (expect 0x50)
+mstr_o=1 cpol_o=0 cpha_o=0 lsbfe_o=0
+spi_mode_o = 10  (expect 10 = SPI_RUN)
+
+--- TEST 3: Configure SPI_BR ---
+T=225000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=235000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=245000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=255000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=265000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=275000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=285000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=23 IRQ=0
+SPI_BR readback = 0x23  (expect 0x23)
+sppr_o=010  spr_o=011  (expect 001, 011)
+
+--- TEST 4: Write SPI_DR = 0xA5 ---
+T=295000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=305000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=315000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=325000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=1 MOSI=a5 PRDATA=00 IRQ=0
+T=335000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+send_data_o=0  (expect 1)
+mosi_data_o=0x00  (expect 0xA5)
+send_data_o after idle=0  (expect 0)
+
+--- TEST 5: Simulate MISO receive 0x3C ---
+T=405000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=415000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=3c IRQ=0
+SPI_DR after receive = 0x3c  (expect 0x3C)
+
+--- TEST 6: Read SPI_SR ---
+T=425000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=435000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=445000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=80 IRQ=0
+SPI_SR = 0x80  (expect 0x80: spif=1)
+
+--- TEST 7: SPI_CR2 mask test ---
+T=455000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=465000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=475000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=485000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=495000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=505000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=515000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=1b IRQ=0
+SPI_CR2 after write 0xFF = 0x1b  (expect 0x1B)
+
+--- TEST 8: PSLVERR when tip_i=0 ---
+T=518000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=1b IRQ=0
+T=525000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=535000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=545000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+PREADY_o=1 PSLVERR_o=1  (expect 1, 1)
+
+--- TEST 9: SPE=0 -> spi_mode should go to SPI_WAIT ---
+T=548000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+T=555000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=565000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=575000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=585000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=595000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=605000 | STATE=00 SPI_MODE=00 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 00  (expect 01 = SPI_WAIT)
+
+--- TEST 10: SPE=1 -> spi_mode returns to SPI_RUN ---
+T=625000 | STATE=01 SPI_MODE=00 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=635000 | STATE=10 SPI_MODE=00 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=645000 | STATE=01 SPI_MODE=00 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=655000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 10  (expect 10 = SPI_RUN)
+
+--- Simulation complete ---
+$finish called at time : 715 ns : File "V:/apb_based_spi/tb/apb_slave_tb.v" Line 327
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'apb_slave_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1655.168 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\tb\apb_slave_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [V:\apb_based_spi\rtl\apb_slave.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'apb_slave_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'apb_slave_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj apb_slave_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:143]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:144]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:146]
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb
+ERROR: [VRFC 10-4982] syntax error near '-' [V:/apb_based_spi/tb/apb_slave_tb.v:237]
+ERROR: [VRFC 10-8530] module 'apb_slave_tb' is ignored due to previous errors [V:/apb_based_spi/tb/apb_slave_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.168 ; gain = 0.000
+open_project V:/apb_based_spi/sim/apb_slave.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'V:/apb_based_spi/sim/apb_slave.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc702\1.4\board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1655.168 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'apb_slave_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'apb_slave_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj apb_slave_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:143]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:144]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:146]
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb
+ERROR: [VRFC 10-4982] syntax error near '-' [V:/apb_based_spi/tb/apb_slave_tb.v:237]
+ERROR: [VRFC 10-8530] module 'apb_slave_tb' is ignored due to previous errors [V:/apb_based_spi/tb/apb_slave_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'apb_slave_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'apb_slave_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj apb_slave_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/rtl/apb_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:143]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:144]
+WARNING: [VRFC 10-3380] identifier 'spe' is used before its declaration [V:/apb_based_spi/rtl/apb_slave.v:146]
+INFO: [VRFC 10-2263] Analyzing Verilog file "V:/apb_based_spi/tb/apb_slave_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_slave_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot apb_slave_tb_behav xil_defaultlib.apb_slave_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.apb_slave
+Compiling module xil_defaultlib.apb_slave_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot apb_slave_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/apb_based_spi/sim/apb_slave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "apb_slave_tb_behav -key {Behavioral:sim_1:Functional:apb_slave_tb} -tclbatch {apb_slave_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source apb_slave_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+T=0 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=35000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+
+--- TEST 1: Reset values ---
+T=55000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=65000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=04 IRQ=0
+SPI_CR1 after reset = 0x04  (expect 0x04)
+T=75000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=85000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=95000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_CR2 after reset = 0x00  (expect 0x00)
+T=105000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=115000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=125000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+SPI_BR  after reset = 0x00  (expect 0x00)
+spi_mode_o = 01  (01=SPI_WAIT is correct; spe=0 at reset)
+
+--- TEST 2: Configure SPI_CR1 (SPE=1, MSTR=1) ---
+T=135000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=145000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=155000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=165000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=175000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=205000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=215000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+SPI_CR1 readback = 0x50  (expect 0x50)
+mstr_o=1 cpol_o=0 cpha_o=0 lsbfe_o=0
+spi_mode_o = 10  (expect 10 = SPI_RUN)
+
+--- TEST 3: Configure SPI_BR ---
+T=225000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=235000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=245000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=255000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=265000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=275000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=285000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=23 IRQ=0
+SPI_BR readback = 0x23  (expect 0x23)
+sppr_o=010  spr_o=011  (expect 001, 011)
+
+--- TEST 4: Write SPI_DR = 0xA5 ---
+T=295000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=305000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=315000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=325000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=1 MOSI=a5 PRDATA=00 IRQ=0
+send_data_o=1  (expect 1)
+mosi_data_o=0xa5  (expect 0xA5)
+T=335000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+send_data_o after idle=0  (expect 0)
+
+--- TEST 5: Simulate MISO receive 0x3C ---
+T=395000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=405000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=3c IRQ=0
+SPI_DR after receive = 0x3c  (expect 0x3C)
+
+--- TEST 6: Read SPI_SR ---
+T=415000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=425000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=435000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=80 IRQ=0
+SPI_SR = 0x80  (expect 0x80: spif=1)
+
+--- TEST 7: SPI_CR2 mask test ---
+T=445000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=455000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=465000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=475000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=485000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=495000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=505000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=1b IRQ=0
+SPI_CR2 after write 0xFF = 0x1b  (expect 0x1B)
+
+--- TEST 8: PSLVERR when tip_i=0 ---
+T=508000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=1b IRQ=0
+T=515000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=525000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=535000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=1 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+PREADY_o=1 PSLVERR_o=1  (expect 1, 1)
+
+--- TEST 9: SPE=0 -> spi_mode should go to SPI_WAIT ---
+T=538000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=50 IRQ=0
+T=545000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=555000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=565000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=575000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=585000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=595000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=605000 | STATE=10 SPI_MODE=10 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=615000 | STATE=01 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=625000 | STATE=00 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 01  (expect 01 = SPI_WAIT)
+
+--- TEST 10: SPE=1 -> spi_mode returns to SPI_RUN ---
+T=665000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=675000 | STATE=10 SPI_MODE=01 PREADY=1 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=685000 | STATE=01 SPI_MODE=01 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+T=695000 | STATE=00 SPI_MODE=10 PREADY=0 PSLVERR=0 SEND=0 MOSI=00 PRDATA=00 IRQ=0
+spi_mode_o = 10  (expect 10 = SPI_RUN)
+
+--- Simulation complete ---
+$finish called at time : 755 ns : File "V:/apb_based_spi/tb/apb_slave_tb.v" Line 373
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'apb_slave_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  9 11:51:44 2026...

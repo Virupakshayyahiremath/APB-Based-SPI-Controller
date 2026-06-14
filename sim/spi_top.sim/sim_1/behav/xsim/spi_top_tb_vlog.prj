@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../../rtl/apb_slave.v" \
+"../../../../../rtl/shift_reg.v" \
+"../../../../../rtl/spi_baud_generator.v" \
+"../../../../../rtl/spi_slave_select.v" \
+"../../../../../rtl/spi_top.v" \
+"../../../../../tb/spi_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,149 @@
+Time resolution is 1 ps
+
+===== Mode 0 (cpol=0,cpha=0) MSB-first TX =====
+[0] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[30000] RESET released
+[40000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[50000] Loaded MOSI data = 0xa5
+[50000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[60000] SPI started (ss_i=0)
+[60000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[75000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=6
+[95000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=5
+[115000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=4
+[135000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=3
+[155000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=2
+[175000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=1
+[195000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=0
+[215000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[220000] TX done: sent=0xa5 mosi_bits=10100101 lsbfe=0
+[230000] SPI stopped (ss_i=1)
+[230000] ss=1 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[235000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 0 (cpol=0,cpha=0) LSB-first TX =====
+[280000] RESET released
+[290000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[300000] Loaded MOSI data = 0xa5
+[300000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[310000] SPI started (ss_i=0)
+[310000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[325000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=1 cnt1=7
+[345000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=2 cnt1=7
+[365000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=3 cnt1=7
+[385000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=4 cnt1=7
+[405000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=5 cnt1=7
+[425000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=6 cnt1=7
+[445000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=7 cnt1=7
+[465000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[470000] TX done: sent=0xa5 mosi_bits=10100101 lsbfe=1
+[480000] SPI stopped (ss_i=1)
+[480000] ss=1 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[485000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 0 MSB-first RX: expect 0xCC =====
+[530000] RESET released
+[540000] SPI started (ss_i=0)
+[540000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[550000] ss=0 send=0 mosi=0 miso=1 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[590000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[630000] ss=0 send=0 mosi=0 miso=1 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[670000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[710000] ss=0 send=0 mosi=0 miso=0 rcv=1 data_miso=00 | cnt=0 cnt1=7
+[715000] ss=0 send=0 mosi=0 miso=0 rcv=1 data_miso=cc | cnt=0 cnt1=7
+[720000] read_received_data: captured = 0xcc
+[720000] PASS: data_miso_o=0xcc (expected 0xcc)
+[720000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[730000] SPI stopped (ss_i=1)
+[730000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 0 LSB-first RX: feed 0xCC MSB-first, expect 0x33 =====
+[780000] RESET released
+[790000] SPI started (ss_i=0)
+[790000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[800000] ss=0 send=0 mosi=0 miso=1 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[840000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[880000] ss=0 send=0 mosi=0 miso=1 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[920000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[960000] ss=0 send=0 mosi=0 miso=0 rcv=1 data_miso=00 | cnt=0 cnt1=7
+[965000] ss=0 send=0 mosi=0 miso=0 rcv=1 data_miso=33 | cnt=0 cnt1=7
+[970000] read_received_data: captured = 0x33
+[970000] PASS: data_miso_o=0x33 (expected 0x33)
+[970000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[980000] SPI stopped (ss_i=1)
+[980000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 1 (cpol=0,cpha=1) MSB-first TX =====
+[1030000] RESET released
+[1040000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1050000] Loaded MOSI data = 0x5a
+[1050000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1060000] SPI started (ss_i=0)
+[1060000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1075000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=6
+[1095000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=5
+[1115000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=4
+[1135000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=3
+[1155000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=2
+[1175000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=1
+[1195000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=0
+[1215000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1220000] TX done: sent=0x5a mosi_bits=01011010 lsbfe=0
+[1230000] SPI stopped (ss_i=1)
+[1230000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 2 (cpol=1,cpha=0) MSB-first TX =====
+[1280000] RESET released
+[1290000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1300000] Loaded MOSI data = 0x5a
+[1300000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1310000] SPI started (ss_i=0)
+[1310000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1325000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=6
+[1345000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=5
+[1365000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=4
+[1385000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=3
+[1405000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=2
+[1425000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=1
+[1445000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=0
+[1465000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1470000] TX done: sent=0x5a mosi_bits=01011010 lsbfe=0
+[1480000] SPI stopped (ss_i=1)
+[1480000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mode 3 (cpol=1,cpha=1) MSB-first TX =====
+[1530000] RESET released
+[1540000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1550000] Loaded MOSI data = 0x5a
+[1550000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1560000] SPI started (ss_i=0)
+[1560000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1575000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=6
+[1595000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=5
+[1615000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=4
+[1635000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=3
+[1655000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=2
+[1675000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=1
+[1695000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=0
+[1715000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1720000] TX done: sent=0x5a mosi_bits=01011010 lsbfe=0
+[1730000] SPI stopped (ss_i=1)
+[1730000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+===== Mid-frame reset =====
+[1780000] RESET released
+[1780000] TEST: reset mid-frame
+[1790000] ss=1 send=1 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1800000] Loaded MOSI data = 0xff
+[1800000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1810000] SPI started (ss_i=0)
+[1810000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1825000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=6
+[1845000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=5
+[1865000] ss=0 send=0 mosi=1 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=4
+[1870000] ss=0 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+[1915000] PASS: mosi_o=0 after mid-frame reset
+[1915000] ss=1 send=0 mosi=0 miso=0 rcv=0 data_miso=00 | cnt=0 cnt1=7
+
+[1935000] Simulation complete
+$finish called at time : 1935 ns : File "V:/apb_based_spi/tb/shift_reg_tb.v" Line 344

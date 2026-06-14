@@ -1,0 +1,7 @@
+Running: xsim.dir/apb_slave_tb_behav/xsimk.exe -simmode gui -wdb apb_slave_tb_behav.wdb -simrunnum 0 -socket 55162
+Design successfully loaded
+Design Loading Memory Usage: 11152 KB (Peak: 11152 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 11940 KB (Peak: 11940 KB)
+Simulation CPU Usage: 93 ms
